@@ -1,0 +1,151 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(rgb(199, 114, 114), rgb(80, 80, 80));
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.resume_builder{
+    padding: 27px 100px;
+}
+.container{
+    padding: 10px 30px;
+    background-color: rgb(240,240,240);
+    border-radius: 12px;
+    height: auto;
+    width: 60%;
+    margin: auto;
+}
+.container h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+input,textarea{
+    background: transparent;
+    margin: 20px 0;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    display: block;
+    width: 100%;
+}
+button{
+    border: none;
+    background: white;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: bolder;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+button:hover{
+    font-size: medium;
+}
+.output-container {
+    display: none;
+    width: 60%;
+    margin: 10px auto;
+}
+.output{
+    background-color: white;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+.heading{
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-transform: uppercase;
+}
+.heading h4{
+    color: rgb(200,200,200);
+    padding-top: 10px;
+}
+.info{
+    display: flex;
+    padding: 20px;
+}
+.left{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    border-right:2px dashed black ;
+    justify-content: space-evenly;
+}
+.right{
+    width: 60%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.box{
+    margin: 10px 0px;
+    padding: 5px 10px;
+    height: auto;
+    overflow-wrap: break-word;
+}
+.box h2,.box p{
+    margin-bottom: 7px;
+}
+.tip{
+    font-size: small;
+    color: gray;
+    text-align: center;
+}
+.credit{
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 3px;
+    color: rgb(80,80,80);
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(247, 28, 12);
+    font-weight: bold;
+}
+@media screen and (max-width: 920px) {
+    .container {
+        width: 100%;
+    }
+
+    .output-container {
+        width: 87%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .resume-builder {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 160%;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .left {
+        border-right: none;
+        width: 100%;
+    }
+
+    .right {
+        padding-left: 0;
+        width: 100%;
+    }
+}
